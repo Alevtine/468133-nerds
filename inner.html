@@ -6,28 +6,26 @@
   </head>
       <body>
         <header class="main-header">
+          <a class="main-header-logo">
+            <img src="http://placehold.it/logo" width="100" height="100" alt="Логотип студии Нёрдс">
+          </a>
           <nav class="main-navigation">
-            <a class="main-header-logo">
-              <img src="http://placehold.it/logo" width="100" height="100" alt="Логотип студии Нёрдс">
-            </a>
-          <ul class="site-navigation">
+            <ul class="site-navigation">
             <li><a href="studio.html">Студия</a></li>
             <li><a href="clients.html">Клиенты</a></li>
             <li><a href="shop.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          <ul class="user-navigation">
-            <li><a class="basket" href="basket.html">Корзина</a></li>
-          </ul>
-        </nav>
+          </nav>
+          <a class="basket" href="basket.html">Корзина</a>
         </header>
         <main>
-        <h1>Магазин готовых шаблонов</h1>
-        <section class="filters">
+          <h1>Магазин готовых шаблонов</h1>
+          <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset><legend>Стоимость:</legend>
-              <!-- как сделать эту штучку? -->
+              <input type="range">
             </fieldset>
             <fieldset><legend>Сетка:</legend>
               <ul class="filters-option">
@@ -54,49 +52,96 @@
                 </ul>
             </fieldset>
             <button type="submit">Показать</button>
-          <fieldset><legend>Сортировать:</legend>
+          </form>
+          </section>
+          <section class="sorting"><strong>Сортировать:</strong>
             <ul class="sorting-option">
               <li class="sorting-option-price">
-                <input class="visually-hidden filter-input-radio" type="radio" name="by price" checked>По цене</li>
+                <input class="visually-hidden filter-input-radio" type="radio" name="by price" checked>По цене
+              </li>
               <li class="sorting-option-type">
-                <input class="visually-hidden filter-input-radio" type="radio" name="by type">По типу</li>
+                <input class="visually-hidden filter-input-radio" type="radio" name="by type">По типу
+              </li>
               <li class="sorting-option-name">
-                <input class="visually-hidden filter-input-radio" type="radio" name="by name">По названию</li>
+                <input class="visually-hidden filter-input-radio" type="radio" name="by name">По названию
+              </li>
             </ul>
-          </fieldset>
-        </form>
-        </section>
+          </section>
           <section class="catalog">
             <ul class="catalog-results">
               <li class="catalog-results-item">
                 <a class="catalog-results-item-sedona" href="maketsedona.html">
-                  <img src="http://placehold.it/maketsedona" width="100" height="100"></a></li>
+                  <img src="http://placehold.it/maketsedona" width="100" height="100"></a>
+                <p class="catalog-results-item-sedona-info">
+                  <h4><strong>SEDONA</strong></h4>
+                  <span>Информационный сайт для туристов</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-pink" href="maketpink.html">
-                  <img src="http://placehold.it/maketpink" width="100" height="100"></a></li>
+                  <img src="http://placehold.it/maketpink" width="100" height="100"></a>
+                <p class="catalog-results-item-pink-info">
+                  <h4><strong>PINK APP</strong></h4>
+                  <span>Продуктовый лендинг <br>приложения для iOS и Android</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-borodinsky" href="maketborodinsky.html">
-                  <img src="http://placehold.it/maketborodinsky" width="100" height="100"></a></li>
+                  <img src="http://placehold.it/maketborodinsky" width="100" height="100"></a>
+                <p class="catalog-results-item-borodinsky-info">
+                  <h4><strong>BARBERSHOP</strong></h4>
+                  <span>Сайт салона красоты. Для мужчин, да.</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-mishka" href="maketmishka.html">
-                  <img src="http://placehold.it/maketmishka" width="100" height="100"></a></li>
+                  <img src="http://placehold.it/maketmishka" width="100" height="100"></a>
+                <p class="catalog-results-item-mishka-info">
+                  <h4><strong>MISHKA</strong></h4>
+                  <span>Интернет-магазин вязаных игрушек</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
               <li class="catalog-results-item">
-                <a class="catalog-results-item-htmlacad" href="makethtmlacad.html">
-                  <img src="http://placehold.it/makethtmlacad" width="100" height="100"></a></li>
+                <a class="catalog-results-item-aplus" href="maketaplus.html">
+                  <img src="http://placehold.it/maketaplus" width="100" height="100"></a>
+                <p class="catalog-results-item-aplus-info">
+                  <h4><strong>A PLUS</strong></h4>
+                  <span>Лендинг курсов повышения квалификации</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-craft" href="maketcraft.html">
-                  <img src="http://placehold.it/maketcraft" width="100" height="100"></a></li>
+                  <img src="http://placehold.it/maketcraft" width="100" height="100"></a>
+                <p class="catalog-results-item-craft-info">
+                  <h4><strong>КВАСТ</strong></h4>
+                  <span>Промо-сайт производителя крафтового кваса</span>
+                  <a class="button" href="#">9 900РУБ.</a>
+                </p>
+              </li>
             </ul>
           </section>
+          <section class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-              <li class="pagination-item"><a>2</a></li>
-              <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-item-current">1
+              </li>
+              <li class="pagination-item"><a>2</a>
+              </li>
+              <li class="pagination-item"><a href="#">3</a>
+              </li>
+              <li class="pagination-item"><a href="#">Следующая</a>
+              </li>
             </ul>
+          </section>
         </main>
         <footer class="main-footer">
-          <!-- тут должна быть карта? как сделать? -->
+          <div class="map">
+            <p></p>
+          </div>
           <p class="footer-contacts">
             <b>Nёrds Design Studio</b>
               <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
