@@ -7,7 +7,7 @@
       <body>
         <header class="main-header">
           <a class="main-header-logo">
-            <img src="http://placehold.it/logo" width="100" height="100" alt="Логотип студии Нёрдс">
+            <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
           </a>
           <nav class="main-navigation">
             <ul class="site-navigation">
@@ -30,25 +30,36 @@
             <fieldset><legend>Сетка:</legend>
               <ul class="filters-option">
                 <li class="filters-option-grid">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type" checked>Адаптивная</li>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type" id="filters-adapt" checked>
+                  <label for="filters-adapt">Адаптивная</label>
+                </li>
                 <li class="filters-option-grid">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type">Фиксированная</li>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type" id="filters-fix">
+                  <label for="filters-fix">Фиксированная</label>
+                </li>
                 <li class="filters-option-grid">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type">Резиновая</li>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid type" id="filters-rub">
+                  <label for="filters-rub">Резиновая</label>
+                </li>
               </ul>
             </fieldset>
             <fieldset><legend>Особенности:</legend>
               <ul class="filters-option">
                 <li class="filters-option-spec">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" checked>Слайдер</li>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" id="filters-slider" checked><label for="filters-slider">Слайдер</label>
+                </li>
                 <li class="filters-option-spec">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type">Блок преимуществ</li>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" id="filters-advant"><label for="filters-advant">Блок преимуществ</label>
+                </li>
                 <li class="filters-option-spec">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" checked>Новости</li>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" id="filters-news" checked><label for="filters-news">Новости</label>
+                </li>
                 <li class="filters-option-spec">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type">Галерея</li>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" id="filters-gallery"><label for="filters-gallery">Галерея</label>
+                </li>
                 <li class="filters-option-spec">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type">Корзина</li>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec type" id="filters-basket"><label for="filters-basket">Корзина</label>
+                </li>
                 </ul>
             </fieldset>
             <button type="submit">Показать</button>
@@ -71,7 +82,7 @@
             <ul class="catalog-results">
               <li class="catalog-results-item">
                 <a class="catalog-results-item-sedona" href="maketsedona.html">
-                  <img src="http://placehold.it/maketsedona" width="100" height="100"></a>
+                  <img src="img/img-sedona.png" width="360" height="576"></a>
                 <p class="catalog-results-item-sedona-info">
                   <h4><strong>SEDONA</strong></h4>
                   <span>Информационный сайт для туристов</span>
@@ -80,7 +91,7 @@
               </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-pink" href="maketpink.html">
-                  <img src="http://placehold.it/maketpink" width="100" height="100"></a>
+                  <img src="img/img-pink.png" width="360" height="576"></a>
                 <p class="catalog-results-item-pink-info">
                   <h4><strong>PINK APP</strong></h4>
                   <span>Продуктовый лендинг <br>приложения для iOS и Android</span>
@@ -89,7 +100,7 @@
               </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-borodinsky" href="maketborodinsky.html">
-                  <img src="http://placehold.it/maketborodinsky" width="100" height="100"></a>
+                  <img src="img/img-barbershop.png" width="360" height="576"></a>
                 <p class="catalog-results-item-borodinsky-info">
                   <h4><strong>BARBERSHOP</strong></h4>
                   <span>Сайт салона красоты. Для мужчин, да.</span>
@@ -98,7 +109,7 @@
               </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-mishka" href="maketmishka.html">
-                  <img src="http://placehold.it/maketmishka" width="100" height="100"></a>
+                  <img src="img/img-mishka.png" width="360" height="576"></a>
                 <p class="catalog-results-item-mishka-info">
                   <h4><strong>MISHKA</strong></h4>
                   <span>Интернет-магазин вязаных игрушек</span>
@@ -107,7 +118,7 @@
               </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-aplus" href="maketaplus.html">
-                  <img src="http://placehold.it/maketaplus" width="100" height="100"></a>
+                  <img src="img/img-aplus.png" width="360" height="576"></a>
                 <p class="catalog-results-item-aplus-info">
                   <h4><strong>A PLUS</strong></h4>
                   <span>Лендинг курсов повышения квалификации</span>
@@ -116,7 +127,7 @@
               </li>
               <li class="catalog-results-item">
                 <a class="catalog-results-item-craft" href="maketcraft.html">
-                  <img src="http://placehold.it/maketcraft" width="100" height="100"></a>
+                  <img src="img/img-kvast.png" width="360" height="576"></a>
                 <p class="catalog-results-item-craft-info">
                   <h4><strong>КВАСТ</strong></h4>
                   <span>Промо-сайт производителя крафтового кваса</span>
@@ -140,7 +151,10 @@
         </main>
         <footer class="main-footer">
           <div class="map">
-            <p></p>
+            <p>
+              <img src="img/map.png" width="1440" height="416">
+              <img src="img/map-marker.png" width="231" height="190">
+            </p>
           </div>
           <p class="footer-contacts">
             <b>Nёrds Design Studio</b>
