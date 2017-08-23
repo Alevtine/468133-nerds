@@ -8,28 +8,157 @@ body {
     font-weight: normal;
     color: #283136;
 
+    background-color: #ffffff;
 }
 
 header, .slider {
     background-color: #eeeeee;
 }
 
-.
-
-
 h1 {
-  font-size: 55px;
-  line-height: normal;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    line-height: normal;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 
 h2 {
-  font-size: 45px;
-  line-height: normal;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    line-height: normal;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    font-weight: bold;
+    color: #fb565a;
+}
+
+.basket {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.basket:hover,
+.basket:focus {
+    font-weight: bold;
+    color: #fb565a;
+}
+
+.services-list,
+.catalog-results,
+.filters-option,
+.sorting-option,
+.projects-list,
+.site-navigation {
+    list-style: none;
+}
+
+.services-list div {
+    font-size: 16px;
+    color: #283136;
+}
+
+.services h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.services a {
+    color: #000000;
+}
+
+.services-list .button {
+    color: #ffffff;
+}
+
+.description-about b {
+    font-size: 45px;
+}
+
+.description-about div,
+.description-about ul {
+    font-size: 16px;
+    color: #283136;
+}
+
+.footer-contacts b,
+a.button, .slider a, strong {
+    text-transform: uppercase;
+}
+
+.footer-contacts b {
+    font-size: 18px;
+}
+
+.footer-contacts a.button {
+    color: #ffffff;
+}
+
+.address {
+    font-size: 16px;
+    color: #666666;
+}
+
+.footer-socialm {
+    font-size: 36px;
+    color: #000000;
+}
+
+.footer-socialm div {
+    font-size: 16px;
+    color: #444444;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #dfdfdf;
+}
+
+.pagination-item-current a {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.description-figures b {
+    text-transform: uppercase;
 }
