@@ -36,6 +36,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .main-navigation {
     font-size: 16px;
     font-weight: bold;
@@ -90,9 +95,65 @@ a {
     color: #000000;
 }
 
-.services-list .button {
+.services-list li:first-child a.button,
+.slider a {
     color: #ffffff;
+    background-color: #fb565a;
 }
+
+.services-list li:nth-child(2) a.button {
+    color: #ffffff;
+    background-color: #00ca74;
+}
+
+.services-list li:nth-child(3) a.button {
+    color: #ffffff;
+    background-color: #efc84a;
+}
+
+.services-list li:first-child a.button:hover,
+.slider a:hover {
+    color: #ffffff;
+    background-color: #e74246;
+}
+
+.services-list li:nth-child(2) a.button:hover {
+    color: #ffffff;
+    background-color: #00bc6c;
+}
+
+.services-list li:nth-child(3) a.button:hover {
+    color: #ffffff;
+    background-color: #eab534;
+}
+
+.services-list li:first-child a.button:active,
+.slider a:active {
+    color: #e26f72;
+    background-color: #d7373b;
+}
+
+.services-list li:nth-child(2) a.button:active {
+    color: #4dc491;
+    background-color: #00aa62;
+}
+
+.services-list li:nth-child(3) a.button:active {
+    color: #edc265;
+    background-color: #e5a722;
+}
+
+.projects a.projects-list-htmlacademy-logo:hover {
+    background-image: url("../img/logo-1-hover.png");
+}
+
+
+
+
+
+
+
+
 
 .description-about b {
     font-size: 45px;
@@ -105,7 +166,9 @@ a {
 }
 
 .footer-contacts b,
-a.button, .slider a, strong {
+a.button,
+.slider a,
+strong {
     text-transform: uppercase;
 }
 
