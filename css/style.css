@@ -99,7 +99,8 @@ a.basket:active {
 
 .services-list li:first-child a.button,
 .slider a,
-.footer-contacts a.button {
+.footer-contacts a.button,
+.write-us button {
     color: #ffffff;
     background-color: #fb565a;
 }
@@ -180,7 +181,8 @@ a.main-header-logo {
 .footer-contacts a.button,
 .services-list a.button,
 .slider a,
-strong {
+strong,
+.write-us button {
     text-transform: uppercase;
 }
 
@@ -209,25 +211,10 @@ strong {
 
 .pagination-list a {
     color: #000000;
-    background-color: #eeeeee;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus,
 .pagination-list a:active {
-    background-color: #dfdfdf;
-}
-
-.pagination-item-current a {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-    color: #000000;
-    background-color: #ffffff;
+    color: #959595;
 }
 
 .description-figures b {
@@ -255,6 +242,7 @@ strong {
 
 .footer-socialm a {
     display: block;
+    font-size: 0;
     background-color: #e1e1e1;
     width: 35px;
     border-radius: 100px;
@@ -262,6 +250,24 @@ strong {
     padding-right: 27px;
     padding-top: 33px;
     padding-bottom: 33px;
+}
+
+.footer-socialm li:nth-child(1) a {
+    background-image: url("../img/vk-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer-socialm li:nth-child(2) a {
+    background-image: url("../img/fb-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer-socialm li:nth-child(3) a {
+    background-image: url("../img/insta-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .slider a {
@@ -284,15 +290,13 @@ strong {
     width: 80px;
 }
 
-.catalog-results-item a.button {
+.catalog-results-item .button {
     display:block;
     background-color: #fb565a;
     border-radius: 5px;
-    padding-left: 60px;
-    padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 120px;
+    width: 200px;
     color: #ffffff;
 }
 
@@ -314,53 +318,64 @@ strong {
     width: 130px;
 }
 
-form button,
-.pagination-list:last-child a {
+.write-us button {
     display:block;
+    width: 260px;
     border-radius: 5px;
-    padding-left: 70px;
-    padding-right: 90px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 80px;
+}
+
+
+
+
+
+form button {
+    display:block;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 260px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #eeeeee;
 }
 
 form button:hover,
-.pagination-list a:hover {
+.pagination-item:hover,
+.pagination-next:hover {
     background-color: #dfdfdf;
 }
 
 form button:active,
-.pagination-list a:active {
+.pagination-item:active,
+.pagination-next:active {
     background-color: #d5d5d5;
     color: #959595;
 }
 
-
-/*
-.catalog-results-item-pink-info {
-    display: block;
-    width: 170px;
+.pagination-item {
+    display:block;
+    width: 20px;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
     background-color: #eeeeee;
+
+}
+
+.pagination-next {
+    display:block;
+    width: 100px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 35px;
-    padding-bottom: 45px;
-}
-*/
-
-.pagination-list:nth-child(2),
-.pagination-list:nth-child(3) {
-    display:block;
-    border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 25px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #eeeeee;
@@ -372,11 +387,45 @@ form button:active,
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 25px;
+    width: 20px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #ffffff;
     border-color: #eeeeee;
     border-width: 5px;
+    border-radius: 5px;
     border-style: solid;
+}
+
+.catalog-results-item div {
+    display: block;
+    width: 360px;
+    text-align: center;
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.catalog-results-item div .button {
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+/* спискам
+{
+display flex
+justify content space-between
+margin: 0
+padding: 0
+list-style: none
+
+min-height: px по высоте рисунков списка
+}
+
+элементам списков
+{
+width
+min-height
 }
