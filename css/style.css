@@ -504,6 +504,78 @@ div.container {
     padding: 0 10px;
 }
 
+
+
+
+.slides {
+    height: 420px;
+	  position: relative;
+	  width: 1160px;
+}
+
+
+.slider-1, .slider-2, .slider-3 {
+	  height: inherit;
+	  position: absolute;
+	  width: inherit;
+}
+/*
+.slider-1 h1, div, a,
+.slider-2 h1, div, a,
+.slider-3 h1, div, a {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}*/
+
+.slider-1 {
+    background-image: url("../img/nerds-index-slide1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+.slide-2 {
+    background-image: url("../img/nerds-index-slide2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.slide-3 {
+    background-image: url("../img/nerds-index-slide3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.controls {
+	  left: 50%;
+	  margin-left: -98px;
+    position: absolute;
+
+}
+
+.slider label {
+	  cursor: pointer;
+	  display: inline-block;
+	  height: 8px;
+	  margin: 25px 12px 0 16px;
+	  position: relative;
+	  width: 8px;
+	  border-radius: 50%;
+}
+
+.slider label:after {
+	  border: 2px solid #ddd;
+	  content: " ";
+	  display: block;
+	  height: 12px;
+	  left: -4px;
+	  position: absolute;
+	  top: -4px;
+	  width: 12px;
+	  border-radius: 50%;
+}
+
+
 .services-list {
     display: flex;
     flex-direction: row;
@@ -576,6 +648,17 @@ main.container {
 .footer-socialm {
     min-height: 100px;
 }
+
+
+
+
+/*
+* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: content-box;
+}
+*/
 
 /*
 input[type="radio"] {
