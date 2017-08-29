@@ -321,7 +321,7 @@ strong,
 }
 
 .write-us button {
-    display:block;
+    display: none;
     width: 260px;
     border-radius: 5px;
     padding-top: 20px;
@@ -478,15 +478,12 @@ input[type="radio"]:checked + label::before {
 
 /*сетка*/
 
-.main-header {
-    min-height: 135px;
-    display: block;
-    width: 1440px;
-    background-color: #eeeeee;
-
+.container {
+    width: 1160px;
+    margin: 0 auto;
 }
 
-.main-navigation {
+.container .main-navigation {
     min-height: 100px;
     width: 1160px;
     display: flex;
@@ -622,14 +619,7 @@ div.container {
     max-width: 1160px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1160px;
-    margin: 0 auto;
 
-}
 
 .services-list-item {
     min-height: 345px;
@@ -648,7 +638,7 @@ main {
 }
 
 .description-about {
-    disply: flex;
+    display: block;
     min-height: 460px;
     width: 660px;
     line-height: 40px;
