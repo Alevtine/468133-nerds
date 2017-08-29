@@ -523,18 +523,6 @@ input[type="radio"]:checked + label::before {
     margin-top: 25px;
 }
 
-div.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-    background-color: #eeeeee;
-}
-
-
-
 
 .slides {
     height: 420px;
@@ -626,7 +614,7 @@ div.container {
     width: 300px;
 }
 
-.description {
+.description .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -653,6 +641,7 @@ div.container {
     line-height: 20px;
 
 }
+
 
 .projects-list {
     display: flex;
