@@ -79,7 +79,8 @@ a.basket:active {
 .filters-option,
 .sorting-option,
 .projects-list,
-.site-navigation {
+.site-navigation,
+.footer-socialm ul {
     list-style: none;
 }
 
@@ -244,13 +245,14 @@ strong,
     display: block;
     font-size: 0;
     background-color: #e1e1e1;
-    width: 35px;
+    width: 15px;
     border-radius: 100px;
     padding-left: 27px;
     padding-right: 27px;
     padding-top: 33px;
     padding-bottom: 33px;
 }
+
 
 .footer-socialm li:nth-child(1) a {
     background-image: url("../img/vk-icon.png");
@@ -438,9 +440,6 @@ input[type="checkbox"]:checked + label::before:hover {
 }
 
 
-
-
-
 input[type="radio"] {
     display:none;
 }
@@ -459,19 +458,41 @@ input[type="radio"]:checked + label::before {
     background-image: url('../img/svg-nerds/radio-on.svg');
 }
 
+.figures td {
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 48px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.figures-names td {
+    color: #283136;
+    text-align: justify;
+}
+
+.description-figures b {
+    margin-top: 40px;
+}
+
 
 /*сетка*/
 
 .main-header {
     min-height: 135px;
+    display: block;
+    width: 1440px;
+    background-color: #eeeeee;
+
 }
 
 .main-navigation {
     min-height: 100px;
+    width: 1160px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    margin: 0 140px 0 140px;
+    align-content: space-between;
+    margin-left: 170px;
     padding: 50px 0 20px 0;
 }
 
@@ -479,20 +500,30 @@ input[type="radio"]:checked + label::before {
     min-height: 65px;
     width: 160px;
     height: 65px;
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation {
     min-height: 40px;
-    width: 440px;
+    width: 500px;
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 25px;
 }
 
+.site-navigation li {
+    display: inline;
+    margin-right: 45px;
+}
+
+
 .basket {
-    width: 140px;
-    margin: 0;
+    width: 125px;
+    margin-right: -50px;
     padding: 0;
+    margin-top: 25px;
 }
 
 div.container {
@@ -502,6 +533,7 @@ div.container {
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: #eeeeee;
 }
 
 
@@ -538,19 +570,21 @@ div.container {
     background-image: url("../img/nerds-index-slide2.png");
     background-repeat: no-repeat;
     background-position: right;
+    display: none;
 }
 
 .slide-3 {
     background-image: url("../img/nerds-index-slide3.png");
     background-repeat: no-repeat;
     background-position: right;
+    display: none;
 }
 
 .controls {
 	  left: 50%;
+    top: 80%;
 	  margin-left: -98px;
     position: absolute;
-
 }
 
 .slider label {
@@ -588,13 +622,13 @@ div.container {
     max-width: 1160px;
 }
 
-main.container {
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 1160px;
     margin: 0 auto;
-    padding: 0 140px;
+
 }
 
 .services-list-item {
@@ -608,11 +642,13 @@ main.container {
     justify-content: space-between;
     background-image: none;
     max-width: 1160px;
+    max-height: 410px;
     margin: 0 0;
     padding: 0 10px;
 }
 
 .description-about {
+    disply: flex;
     min-height: 460px;
     width: 660px;
     line-height: 40px;
@@ -621,10 +657,11 @@ main.container {
 .description-figures {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     min-height: 460px;
     max-width: 360px;
     line-height: 20px;
+
 }
 
 .projects-list {
@@ -633,7 +670,10 @@ main.container {
     justify-content: space-between;
     height: 180px;
     width: 1100px;
+    margin-top: 125px;
 }
+
+
 
 
 .main-footer {
@@ -646,7 +686,26 @@ main.container {
 }
 
 .footer-socialm {
-    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 950px;
+}
+
+
+.footer-socialm ul {
+    display: inline-flex;
+    margin-top: 70px;
+    margin-right: 140px;
+    margin-bottom: 70px;
+    margin-left: 140px;
+}
+
+.footer-socialm div {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 60px;
+    min-width: 546px;
 }
 
 
