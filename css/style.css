@@ -184,12 +184,19 @@ a.main-header-logo {
 .services-list a.button,
 .slider a,
 strong,
-.write-us button {
+.write-us button,
+legend,
+.sorting-option-item {
     text-transform: uppercase;
 }
 
-.footer-contacts b {
+.footer-contacts b,
+legend {
     font-size: 18px;
+}
+
+legend {
+   font-weight: bold;
 }
 
 .address {
@@ -233,6 +240,7 @@ strong,
 .sorting-option-item {
     font-size: 14px;
     color: #b2b2b2;
+    padding-right: 25px;
 }
 
 .sorting-option-item:hover {
@@ -725,13 +733,18 @@ header h1 {
 .catalog-columns {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-catalog-results
+.filter-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .filters-option {
-    margin-bottom: 50px;
+    display: block;
+    padding-bottom: 50px;
 }
 
 .map {
@@ -744,6 +757,80 @@ catalog-results
     justify-content: space-between;
 }
 
+.range-filter {
+    width: 240px;
+    margin: 50px auto;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-controls .scale {
+    background-color: #d7dcde;
+    height: 2px;
+    width: 222px;
+    margin-top: 39px;
+}
+
+.range-controls .bar {
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+    left: 145px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none;
+    background: #eeeeee;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #353e42;
+    border-radius: 5px;
+}
+
+.price-controls {
+    white-space: nowrap;
+
+}
+
+
+
+.sorting-option {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 266px;
+}
 
 /*
 * {
