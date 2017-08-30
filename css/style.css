@@ -74,6 +74,7 @@ a.basket:active {
     padding-bottom: 13px;
 }
 
+
 .services-list,
 .catalog-results,
 .filters-option,
@@ -208,6 +209,9 @@ strong,
 
 .pagination-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 50px;
 }
 
 .pagination-list a {
@@ -363,6 +367,7 @@ form button:active,
     text-transform: uppercase;
     font-weight: bold;
     background-color: #eeeeee;
+    margin-left: 10px;
 
 }
 
@@ -377,6 +382,7 @@ form button:active,
     text-transform: uppercase;
     font-weight: bold;
     background-color: #eeeeee;
+    margin-left: 10px;
 }
 
 .pagination-item-current {
@@ -483,14 +489,12 @@ input[type="radio"]:checked + label::before {
     margin: 0 auto;
 }
 
-.container .main-navigation {
+.main-navigation {
     min-height: 100px;
-    width: 1160px;
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    margin-left: 170px;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 35px 0;
 }
 
 .main-header-logo {
@@ -508,6 +512,8 @@ input[type="radio"]:checked + label::before {
     padding: 0;
     list-style: none;
     margin-top: 25px;
+    margin-left: 175px;
+    margin-right: 175px;
 }
 
 .site-navigation li {
@@ -517,8 +523,7 @@ input[type="radio"]:checked + label::before {
 
 
 .basket {
-    width: 125px;
-    margin-right: -50px;
+    margin: 0;
     padding: 0;
     margin-top: 25px;
 }
@@ -530,20 +535,11 @@ input[type="radio"]:checked + label::before {
 	  width: 1160px;
 }
 
-
 .slider-1, .slider-2, .slider-3 {
 	  height: inherit;
 	  position: absolute;
 	  width: inherit;
 }
-/*
-.slider-1 h1, div, a,
-.slider-2 h1, div, a,
-.slider-3 h1, div, a {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}*/
 
 .slider-1 {
     background-image: url("../img/nerds-index-slide1.png");
@@ -551,14 +547,14 @@ input[type="radio"]:checked + label::before {
     background-position: right;
   }
 
-.slide-2 {
+.slider-2 {
     background-image: url("../img/nerds-index-slide2.png");
     background-repeat: no-repeat;
     background-position: right;
     display: none;
 }
 
-.slide-3 {
+.slider-3 {
     background-image: url("../img/nerds-index-slide3.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -614,15 +610,10 @@ input[type="radio"]:checked + label::before {
     width: 300px;
 }
 
-.description .container {
+.flex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: none;
-    max-width: 1160px;
-    max-height: 410px;
-    margin: 0 0;
-    padding: 0 10px;
 }
 
 .description-about {
@@ -631,6 +622,7 @@ input[type="radio"]:checked + label::before {
     width: 660px;
     line-height: 40px;
 }
+
 
 .description-figures {
     display: flex;
@@ -642,7 +634,6 @@ input[type="radio"]:checked + label::before {
 
 }
 
-
 .projects-list {
     display: flex;
     flex-direction: row;
@@ -651,9 +642,6 @@ input[type="radio"]:checked + label::before {
     width: 1100px;
     margin-top: 125px;
 }
-
-
-
 
 .main-footer {
     margin-top: 80px;
@@ -680,6 +668,10 @@ input[type="radio"]:checked + label::before {
     margin-left: 140px;
 }
 
+.footer-socialm li {
+    padding: 5px;
+}
+
 .footer-socialm div {
     display: inline-flex;
     flex-direction: column;
@@ -688,6 +680,69 @@ input[type="radio"]:checked + label::before {
 }
 
 
+/*сетка2*/
+
+header h1 {
+    text-align: center;
+    min-height: 160px;
+    margin: 0;
+    padding-left: 0;
+}
+
+.filters {
+    min-height: 777px;
+    width: 262px;
+}
+
+.catalog-results-item {
+    min-height: 616px;
+    width: 360px;
+    margin-bottom: 35px;
+    margin-right: 40px;
+
+}
+
+.catalog-results-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+.catalog-results-item div {
+    display: none;
+}
+
+.catalog-results {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1993px;
+    width: 760px;
+    margin-bottom: 50px;
+}
+
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+catalog-results
+
+.filters-option {
+    margin-bottom: 50px;
+}
+
+.map {
+    margin-top: 60px;
+}
+
+.pagination-list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 /*

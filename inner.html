@@ -9,23 +9,26 @@
   </head>
       <body>
         <header class="main-header">
-          <a class="main-header-logo">
-            <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-          </a>
-          <nav class="main-navigation">
-            <ul class="site-navigation">
-            <li><a href="studio.html">Студия</a></li>
-            <li><a href="clients.html">Клиенты</a></li>
-            <li><a href="shop.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-          </nav>
-          <a class="basket" href="basket.html">Корзина</a>
+          <div class="container">
+            <nav class="main-navigation">
+              <a class="main-header-logo">
+                <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+              </a>
+              <ul class="site-navigation">
+                <li><a href="studio.html">Студия</a></li>
+                <li><a href="clients.html">Клиенты</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+              <a class="basket" href="basket.html">Корзина</a>
+            </nav>
+          </div>
           <h1>Магазин готовых шаблонов</h1>
         </header>
-        <main>
+        <main class="container">
           <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
+            <div class="catalog-columns">
+          <!--<h2 class="visually-hidden">Фильтр товаров</h2>-->
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset><legend>Стоимость:</legend>
               <input type="range">
@@ -67,6 +70,7 @@
             </fieldset>
             <button type="submit">Показать</button>
           </form>
+        </div>
           </section>
           <section class="sorting"><strong>Сортировать:</strong>
             <ul class="sorting-option">
@@ -82,6 +86,7 @@
             </ul>
           </section>
           <section class="catalog">
+            <div class="catalog-columns">
             <ul class="catalog-results">
               <li class="catalog-results-item">
                 <a class="catalog-results-item-sedona" href="maketsedona.html">
@@ -150,6 +155,7 @@
                 </div>
               </li>
             </ul>
+          </div>
           </section>
           <section class="pagination">
             <ul class="pagination-list">
@@ -164,37 +170,46 @@
             </ul>
           </section>
         </main>
-        <footer class="main-footer">
+        <footer>
+          <div class="container">
           <div class="map">
             <p>
               <img src="img/map.png" width="1440" height="416">
               <img src="img/map-marker.png" width="231" height="190">
             </p>
           </div>
-          <div class="footer-contacts">
-            <b>Nёrds Design Studio</b>
-            <div class="address">
-              <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-              <br>Телефон: +7 (812) 275-75-75
-            </div>
-            <br><a class="button" href="mailus.html">Напишите нам</a>
+        </div>
+        <div class="container">
+        <div class="footer-contacts">
+          <b>Nёrds Design Studio</b>
+          <div class="address">
+            <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+            <br>Телефон: +7 (812) 275-75-75
           </div>
-          <div class="write-us">
-            <span>Напишите нам</span>
-            <p>Ваше имя:<input type="text" name="Name" value="Представьтесь, пожалуйста"></p>
-            <p>Ваш e-mail:<input type="email" name="Email" value="Для отправки ответа"></p>
-            <p>Текст письма:<input type="text" name="Text" value="В свободной форме"></p>
-            <button type="submit">Отправить</button>
-          </div>
-          <div class="footer-socialm">
-            <ul>
-              <li><a class="button" href="#">Вконтакте</a></li>
-              <li><a class="button" href="#">Фейсбук</a></li>
-              <li><a class="button" href="#">Инстаграм</a></li>
-            </ul>
+          <br><a class="button" href="mailus.html">Напишите нам</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-socialm">
+          <ul>
+            <li><a class="button" href="#">ВКонтакте</a></li>
+            <li><a class="button" href="#">Фейсбук</a></li>
+            <li><a class="button" href="#">Инстаграм</a></li>
+          </ul>
+            <div>
               <b>Давайте дружить, это выгодно!</b>
-              <div>Скидка 10% для друзей из социальных сетей.</div>
-          </div>
-        </footer>
+              <br>Скидка 10% для друзей из социальных сетей.</br>
+            </div>
+        </div>
+      </div>
+    </div>
+      </footer>
+      <!--<div class="write-us">
+        <span>Напишите нам</span>
+        <p>Ваше имя:<input type="text" name="Name" value="Представьтесь, пожалуйста"></p>
+        <p>Ваш e-mail:<input type="email" name="Email" value="Для отправки ответа"></p>
+        <p>Текст письма:<input type="text" name="Text" value="В свободной форме"></p>
+        <button type="submit">Отправить</button>
+      </div>-->
       </body>
 </html>
