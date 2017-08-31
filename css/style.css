@@ -71,7 +71,7 @@ a.basket:hover {
 a.basket:active {
     color: #cfcfcf;
     border-bottom: 2px solid #fb565a;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
 }
 
 
@@ -545,9 +545,10 @@ input[type="radio"]:checked + label::before {
 
 .slider-1, .slider-2, .slider-3 {
 	  height: inherit;
-	  position: absolute;
+    position: absolute;
 	  width: inherit;
 }
+
 
 .slider-1 {
     background-image: url("../img/nerds-index-slide1.png");
@@ -747,9 +748,6 @@ header h1 {
     padding-bottom: 50px;
 }
 
-.map {
-    margin-top: 60px;
-}
 
 .pagination-list {
     display: inline-flex;
@@ -821,8 +819,6 @@ header h1 {
 
 }
 
-
-
 .sorting-option {
     display: inline-flex;
     flex-direction: row;
@@ -830,6 +826,17 @@ header h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 266px;
+}
+
+.map {
+    display: flex;
+    position: relative;
+    left: -200px;
+
+}
+
+.visually-hidden {
+    visibility: hidden;
 }
 
 /*
