@@ -287,10 +287,10 @@ legend {
 .slider a {
     display:block;
     border-radius: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     width: 140px;
 }
 
@@ -536,6 +536,109 @@ input[type="radio"]:checked + label::before {
     margin-top: 25px;
 }
 
+.slider {
+    position: relative;
+    width: 1160px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.slider-controls {
+    position: absolute;
+    width: 160px;
+    height: 20px;
+    bottom: 97px;
+    left: 50%;
+    margin-left: -80px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls label {
+    width: 8px;
+    height: 8px;
+    border: 5px solid white;
+    margin: 0 3px;
+    background: white;
+    border-radius: 50%;
+    vertical-align: top;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.slider-controls .active {
+    background: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-text {
+    width: 530px;
+    padding: 30px 0;
+    color: #424a4f;
+}
+
+.slide-title {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 500;
+    color: #000000;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../img/nerds-index-slide1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../img/nerds-index-slide2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.slide:nth-child(3) {
+    background-image: url("../img/nerds-index-slide3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#btn-1:checked ~ .sleder-controls label[for="btn-1"],
+#btn-2:checked ~ .sleder-controls label[for="btn-2"],
+#btn-3:checked ~ .sleder-controls label[for="btn-3"] {
+    background: #c1c1c1;
+}
+
+.slider input[type="radio"] {
+    position: absolute;
+    opacity: 1;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+/*
+.slide {
+    display: none;
+}*/
+
+/*
 .wrapper {
     height: 430px;
     width: 1160px;;
@@ -619,7 +722,7 @@ input[type="radio"]:checked + label::before {
 	  top: -5px;
 	  width: 18px;
     border-radius: 50%;
-}
+}*/
 
 .services-list {
     display: flex;
