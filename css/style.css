@@ -61,11 +61,27 @@ a.basket:hover {
 }
 
 .basket {
+    display: flex;
+    position: relative;
     font-size: 16px;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
+    height: 18px;
+    max-width: 136px;
+    padding-left: 45px;
 }
+
+.basket::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url("..img/svg-nerds/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 
 .site-navigation a:active,
 a.basket:active {
@@ -73,7 +89,6 @@ a.basket:active {
     border-bottom: 2px solid #fb565a;
     padding-bottom: 10px;
 }
-
 
 .services-list,
 .catalog-results,
@@ -530,8 +545,6 @@ input[type="radio"]:checked + label::before {
 
 
 .basket {
-    margin: 0;
-    padding: 0;
     margin-top: 25px;
 }
 
@@ -578,6 +591,7 @@ input[type="radio"]:checked + label::before {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: none;
 }
 
 .slide-text {
@@ -634,9 +648,10 @@ input[type="radio"]:checked + label::before {
     display: block;
 }
 
-
-
-
+.container-slider {
+    position: relative;
+    height: 100%;
+}
 
 
 /*
@@ -757,7 +772,8 @@ input[type="radio"]:checked + label::before {
     display: block;
     min-height: 460px;
     width: 660px;
-    line-height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -768,8 +784,15 @@ input[type="radio"]:checked + label::before {
     min-height: 460px;
     max-width: 360px;
     line-height: 20px;
-
 }
+
+.description-about div {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+
 
 .projects-list {
     display: flex;
