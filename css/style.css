@@ -372,7 +372,6 @@ form button:active,
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-transform: uppercase;
     font-weight: bold;
     background-color: #eeeeee;
     margin-left: 10px;
@@ -543,6 +542,11 @@ input[type="radio"]:checked + label::before {
     margin: 0 auto;
 }
 
+.background-slid {
+    background-color: #eeeeee;
+}
+
+
 .slider-controls {
     position: absolute;
     width: 160px;
@@ -557,7 +561,7 @@ input[type="radio"]:checked + label::before {
 .slider-controls label {
     width: 8px;
     height: 8px;
-    border: 5px solid white;
+    border: 4px solid white;
     margin: 0 3px;
     background: white;
     border-radius: 50%;
@@ -566,9 +570,6 @@ input[type="radio"]:checked + label::before {
     display: inline-block;
 }
 
-.slider-controls .active {
-    background: #c1c1c1;
-}
 
 .slide {
     position: absolute;
@@ -610,9 +611,9 @@ input[type="radio"]:checked + label::before {
     background-position: right;
 }
 
-#btn-1:checked ~ .sleder-controls label[for="btn-1"],
-#btn-2:checked ~ .sleder-controls label[for="btn-2"],
-#btn-3:checked ~ .sleder-controls label[for="btn-3"] {
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
     background: #c1c1c1;
 }
 
@@ -632,6 +633,11 @@ input[type="radio"]:checked + label::before {
 #btn-3:checked ~ .slides .slide:nth-child(3) {
     display: block;
 }
+
+
+
+
+
 
 /*
 .slide {
@@ -774,14 +780,6 @@ input[type="radio"]:checked + label::before {
     margin-top: 125px;
 }
 
-.main-footer {
-    margin-top: 80px;
-    padding: 80px;
-}
-
-.footer-contacts {
-    margin: 0;
-}
 
 .footer-socialm {
     display: flex;
@@ -950,12 +948,31 @@ header h1 {
 }
 
 .map {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+
+.footer-contacts {
     display: flex;
     position: relative;
-    left: -200px;
-
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 280px;
+    height: 308px;
+    padding-left: 50px;
+    z-index: 2;
+    top: -350px;
+    left: 400px;
 }
+
 
 .visually-hidden {
     visibility: hidden;
+}
+
+.pagination {
+    padding-bottom: 50px;
 }
