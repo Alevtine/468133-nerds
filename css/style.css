@@ -103,11 +103,14 @@ a.basket:active {
 .services-list div {
     font-size: 16px;
     color: #283136;
+    margin-bottom: 25px;
+    margin-top: -15px;
 }
 
 .services h4 {
     font-size: 24px;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .services a {
@@ -315,7 +318,7 @@ legend {
     display:block;
     border-radius: 5px;
     padding-left: 40px;
-    padding-right: 50px;
+    padding-right: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 80px;
@@ -626,6 +629,9 @@ input[type="radio"]:checked + label::before {
     margin-bottom: 45px;
 }
 
+
+
+
 .slide:nth-child(1) {
     background-image: url("../img/nerds-index-slide1.png");
     background-repeat: no-repeat;
@@ -785,6 +791,8 @@ input[type="radio"]:checked + label::before {
 .services-list-item {
     min-height: 345px;
     width: 300px;
+    margin-top: -115px;
+    margin-right: 60px;
 }
 
 .flex-row {
