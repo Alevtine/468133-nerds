@@ -72,6 +72,8 @@ a.basket:hover {
     padding-left: 45px;
     background-image: url("../img/svg-nerds/cart-icon.svg");
     background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 18px;
 
 }
 
@@ -280,12 +282,13 @@ legend {
     display: block;
     font-size: 0;
     background-color: #e1e1e1;
-    width: 15px;
-    border-radius: 100px;
-    padding-left: 27px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /*padding-left: 27px;
     padding-right: 27px;
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 33px;*/
 }
 
 
@@ -348,13 +351,14 @@ legend {
 }
 
 .footer-contacts a.button {
-    display:block;
+    display: block;
     border-radius: 5px;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 130px;
+    margin-top: -10px;
 }
 
 .write-us button {
@@ -393,11 +397,12 @@ form button:active,
     display:block;
     text-align: center;
     width: 20px;
+    height: 20px;
     border-radius: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     font-weight: bold;
     background-color: #eeeeee;
     margin-left: 10px;
@@ -407,9 +412,9 @@ form button:active,
 .pagination-next {
     display:block;
     width: 100px;
-    border-radius: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-radius: 3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 80px;
     padding-right: 80px;
     text-transform: uppercase;
@@ -427,11 +432,12 @@ form button:active,
     padding-top: 15px;
     padding-bottom: 15px;
     width: 20px;
+    height: 20px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #ffffff;
     border-color: #eeeeee;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 5px;
     border-style: solid;
 }
@@ -543,22 +549,15 @@ input[type="radio"]:checked + label::before {
 .site-navigation {
     min-height: 40px;
     width: 500px;
-    margin: 0;
-    padding: 0;
     list-style: none;
-    margin-top: 32px;
-    margin-left: 202px;
-    margin-right: 175px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 165px;
 }
 
 .site-navigation li {
     display: inline;
     margin-right: 45px;
-}
-
-
-.basket {
-    margin-top: 30px;
 }
 
 .slider {
@@ -837,7 +836,7 @@ input[type="radio"]:checked + label::before {
     justify-content: space-between;
     height: 180px;
     width: 1100px;
-    margin-top: 125px;
+    margin-top: -70px;
 }
 
 
@@ -846,12 +845,14 @@ input[type="radio"]:checked + label::before {
     flex-direction: row;
     align-items: stretch;
     width: 950px;
+    margin-left: -145px;
+    margin-top: -307px;
 }
 
 
 .footer-socialm ul {
     display: inline-flex;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-right: 140px;
     margin-bottom: 70px;
     margin-left: 140px;
@@ -860,12 +861,31 @@ input[type="radio"]:checked + label::before {
 .footer-socialm li {
     padding: 5px;
 }
+/*
+.footer-socialm li:nth-child(1) {
+    margin-left: -25px;
+}
+
+.footer-socialm li:nth-child(2) {
+    margin-left: 15px;
+}
+
+.footer-socialm li:nth-child(3) {
+    margin-left: 10px;
+}*/
+
+.footer-socialm div p {
+    margin-top: 8px;
+}
+
 
 .footer-socialm div {
     display: inline-flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 67px;
     min-width: 546px;
+    margin-left: -5px;
+
 }
 
 
@@ -873,7 +893,7 @@ input[type="radio"]:checked + label::before {
 
 header h1 {
     text-align: center;
-    min-height: 160px;
+    min-height: 173px;
     margin: 0;
     padding-left: 0;
 }
@@ -901,13 +921,13 @@ header h1 {
 }
 
 .catalog-results {
-    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     min-height: 1993px;
     width: 760px;
     margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 
@@ -921,6 +941,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 72px;
+    margin-right: 20px;
 }
 
 .filters-option {
@@ -933,11 +955,13 @@ header h1 {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -3px;
+    margin-left: -10px;
 }
 
 .range-filter {
-    width: 240px;
-    margin: 50px auto;
+    width: 260px;
+    margin-top: 35px;
 }
 
 .range-controls {
@@ -982,7 +1006,7 @@ header h1 {
 .price-controls input {
     width: 60px;
     padding: 8px 10px;
-    margin-left: 10px;
+    margin: 0 32px 0 10px;
     border: none;
     background: #eeeeee;
     font-size: 16px;
@@ -1002,8 +1026,8 @@ header h1 {
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 58px;
+    margin-bottom: 80px;
     margin-left: 266px;
 }
 
@@ -1011,22 +1035,22 @@ header h1 {
     display: block;
     position: relative;
     z-index: 1;
-    margin-top: -155px;
+    margin-top: 20px;
 }
 
 
 .footer-contacts {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    width: 280px;
-    height: 308px;
-    padding-left: 50px;
-    z-index: 2;
-    top: -350px;
-    left: 400px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      width: 220px;
+      height: 208px;
+      z-index: 2;
+      top: -365px;
+      left: 179px;
+      padding: 53px 60px 47px 50px;
 }
 
 
@@ -1036,6 +1060,7 @@ header h1 {
 
 .pagination {
     padding-bottom: 50px;
+    margin-top: -108px;
 }
 
 .description-figures img {
@@ -1054,7 +1079,7 @@ header h1 {
     position: absolute;
     height: 2px;
     width: 1160px;
-    background-color: red;
+    background-color: #eeeeee;
     margin-left: 177px;
 }
 
@@ -1067,24 +1092,45 @@ header h1 {
 }
 
 .divide-3 {
-    margin-top: -237px;
+    margin-top: -60px;
 }
 
 .description-about ul {
     line-height: 3;
     margin-left: 35px;
     padding-top: 17px;
+    list-style-type: none;
+}
+
+.description-about li:after {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+}
+
+
+.projects-list li:nth-child(3) {
+    margin-top: 3px;
+    margin-right: 59px;
 }
 
 .projects-list li:nth-child(1) {
-    margin-top: 20px;
+    margin-right: 47px;
+    padding-left: 30px;
 }
 
 .projects-list li:nth-child(2) {
-    margin-top: 5px;
-    margin-right: 47px;
+    margin-top: -16px;
+    margin-right: 50px;
+}
 
-.projects-list li:nth-child(3) {
-    margin-top: 25px;
-    margin-right: 59px;
+.background-nav {
+    width: 1160px;
+    background-color: #eeeeee;
+}
+
+.sorting strong {
+    font-size: 18px;
 }
