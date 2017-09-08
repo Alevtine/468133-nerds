@@ -27,9 +27,9 @@
     </header>
     <main>
       <div class="background-slid">
-        <div class="container">
+        <div class="container container-slider">
           <div class="slider">
-            <input type="radio" id="btn-1" name="toggle">
+            <input type="radio" id="btn-1" name="toggle" checked="">
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
             <div class="slider-controls">
@@ -86,9 +86,9 @@
               <a class="button" href="">Заказать</a>
             </li>
           </ul>
+          <hr class="divider">
         </div>
       </section>
-      <div class="divide-1"></div>
       <section class="description">
            <div class="container flex-row">
              <div class="description-about">
@@ -119,35 +119,35 @@
              </div>
             </div>
       </section>
-      <div class="divide-2"></div>
       <section class="projects">
         <div class="container">
+        <hr class="divider">
         <h3 class="visually-hidden">Наши проекты</h3>
-        <ul class="projects-list">
-          <li>
-            <a class="projects-list-htmlacademy-logo" href="">
-              <img src="img/logo-1.png" width="199" height="68">
-            </a>
-          </li>
-          <li>
-            <a class="projects-list-borodinsky-logo" href="">
-              <img src="img/logo-2.png" width="209" height="90">
-            </a>
-          </li>
-          <li>
-            <a class="projects-list-pink-logo" href="">
-              <img src="img/logo-3.png" width="185" height="52">
-            </a>
-          </li>
-          <li>
-            <a class="projects-list-mishka-logo" href="">
-              <img src="img/logo-4.png" width="173" height="84">
-            </a>
-          </li>
-        </ul>
+          <ul class="projects-list">
+            <li>
+              <a class="projects-list-htmlacademy-logo" href="">
+                <img src="img/logo-1.png" width="199" height="68">
+              </a>
+            </li>
+            <li>
+              <a class="projects-list-borodinsky-logo" href="">
+                <img src="img/logo-2.png" width="209" height="90">
+              </a>
+            </li>
+            <li>
+              <a class="projects-list-pink-logo" href="">
+                <img src="img/logo-3.png" width="185" height="52">
+              </a>
+            </li>
+            <li>
+              <a class="projects-list-mishka-logo" href="">
+                <img src="img/logo-4.png" width="173" height="84">
+              </a>
+            </li>
+          </ul>
+        <hr class="divider">
         </div>
       </section>
-      <div class="divide-3"></div>
     </main>
     <footer>
       <!--<div class="container">-->
@@ -187,17 +187,21 @@
             </div>
         </div>
       </div>
-
     </footer>
     <div class="write-us">
       <span>Напишите нам</span>
       <div class="write-us-inputs">
-         <div class="Name"><p>Ваше имя:<br><input type="text" name="Name" value="Представьтесь, пожалуйста"></p></div>
-         <div class="Email"><p>Ваш e-mail:<br><input type="email" name="Email" value="Для отправки ответа"></p></div>
-         <div class="Text"><p>Текст письма:<br><input type="text" name="Text" value="В свободной форме"></p></div>
+         <div class="Name"><p>Ваше имя:<br><input type="text" name="Name" value="  Представьтесь, пожалуйста"></p></div>
+         <div class="Email"><p>Ваш e-mail:<br><input type="email" name="Email" value="  Для отправки ответа"></p></div>
+         <div class="Text"><p>Текст письма:<br><input type="text" name="Text" value="  В свободной форме"></p></div>
       </div>
       <button type="submit">Отправить</button>
+      <a class="close-cross" href="#"></a>
     </div>
-
+<!--    <script>
+        var link = document.querySelector(".footer-contacts.button")
+        var popup = document.querySelector(".write-us")
+        var close = document.querySelector(".close-cross")
+    </script>-->
   </body>
 </html>
