@@ -168,7 +168,7 @@
             <br>ул. Б. Конюшенная, д. 19/8
             <br><p>Телефон: +7 (812) 275-75-75</p>
           </div>
-          <br><a class="button" href="mailus.html">Напишите нам</a>
+          <br><a class="button mailus-link" href="mailus.html">Напишите нам</a>
         </div>
       </div>
       <!--<div class="container">-->
@@ -198,10 +198,20 @@
       <button type="submit">Отправить</button>
       <a class="close-cross" href="#"></a>
     </div>
-<!--    <script>
-        var link = document.querySelector(".footer-contacts.button")
+    <script>
+        var link = document.querySelector(".mailus-link")
         var popup = document.querySelector(".write-us")
         var close = document.querySelector(".close-cross")
-    </script>-->
+
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("show")
+        })
+
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("show")
+        })
+    </script>
   </body>
 </html>

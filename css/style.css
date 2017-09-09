@@ -1137,6 +1137,7 @@ header h1 {
     position: absolute;
     background-color: white;
     padding: 110px 60px 60px 100px;
+    display: none;
 }
 
 .write-us-inputs {
@@ -1208,12 +1209,12 @@ header h1 {
 .write-us a {
     display: block;
     position: absolute;
-    background-image: url("../img/svg-nerds/eas-close-cross.png");
+    background-image: url("../img/eas-close-cross.png");
     background-repeat: no-repeat;
     width: 21px;
     height: 21px;
     margin-left: 740px;
-    margin-top: -30px;
+    margin-top: -430px;
 }
 
 .write-us a:hover {
@@ -1230,10 +1231,14 @@ header h1 {
 
 div .browser {
     display: block;
-    background-image: url("img/eas-browser.png");
+    background-image: url("../img/eas-browser.png");
 }
 
 .browser:hover {
     background-image: url("../img/svg-nerds/browser.svg");
     background-repeat: no-repeat;
+}
+
+.show {
+    display: block;
 }
