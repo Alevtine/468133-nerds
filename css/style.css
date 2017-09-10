@@ -15,7 +15,7 @@ header {
     background-color: #eeeeee;
 }
 
-h1 {
+.inner-title {
     font-size: 55px;
     line-height: normal;
     color: #000000;
@@ -376,7 +376,7 @@ legend {
     margin-top: 35px;
 }
 
-form button {
+.filter-button {
     display:block;
     border-radius: 5px;
     padding-top: 20px;
@@ -387,13 +387,13 @@ form button {
     background-color: #eeeeee;
 }
 
-form button:hover,
+.filter-button:hover,
 .pagination-item:hover,
 .pagination-next:hover {
     background-color: #dfdfdf;
 }
 
-form button:active,
+.filter-button:active,
 .pagination-item:active,
 .pagination-next:active {
     background-color: #d5d5d5;
@@ -775,7 +775,7 @@ input[type="radio"]:checked + label::before {
 
 /*сетка2*/
 
-header h1 {
+.inner-title {
     text-align: center;
     min-height: 173px;
     margin: 0;
