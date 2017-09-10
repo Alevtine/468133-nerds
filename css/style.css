@@ -1244,6 +1244,7 @@ header h1 {
     position: fixed;
     top: 30%;
     left: 30%;
+    margin-bottom:
     z-index: 10;
 }
 
@@ -1259,14 +1260,18 @@ header h1 {
     position: absolute;
 }
 
-.down:active {
-    background-image: url("../img/svg-nerds/icon-down-dir.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.down path:hover {
+    fill: #a6a6a6;
 }
 
-.up:active {
-    background-image: url("../img/svg-nerds/icon-up-dir.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.up path:hover {
+    fill: #a6a6a6;
+}
+
+.down path:active {
+    fill: #231f20;
+}
+
+.up path:active {
+    fill: #231f20;
 }
