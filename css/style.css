@@ -449,16 +449,16 @@ form button:active,
     border-style: solid;
 }
 
-.catalog-results-item div {
+.catalog-results-item-price {
     display: block;
-    width: 360px;
+    width: 275px;
+    height: 130px;
     text-align: center;
     background-color: #eeeeee;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding: 15px 45px 95px 45px;
 }
 
-.catalog-results-item div .button {
+.catalog-results-item-price .button {
     margin: auto;
     margin-top: 30px;
 }
@@ -924,7 +924,7 @@ header h1 {
 
 
 .catalog-results-item div {
-    display: none;
+
 }
 
 .catalog-results {
@@ -1136,7 +1136,7 @@ header h1 {
     flex-direction: column;
     position: absolute;
     background-color: white;
-    padding: 110px 60px 60px 100px;
+    padding: 70px 60px 60px 100px;
     display: none;
 }
 
@@ -1229,7 +1229,7 @@ header h1 {
     padding: 5px 0 4px 0;
 }
 
-div .browser {
+.browser {
     display: block;
     background-image: url("../img/eas-browser.png");
 }
@@ -1241,4 +1241,32 @@ div .browser {
 
 .show {
     display: block;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    z-index: 10;
+}
+
+.catalog-results-item-price {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+}
+
+.catalog-results-item-price:hover {
+    display: block;
+    visibility: visible;
+    position: absolute;
+}
+
+.down:active {
+    background-image: url("../img/svg-nerds/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.up:active {
+    background-image: url("../img/svg-nerds/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
