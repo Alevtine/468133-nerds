@@ -110,8 +110,9 @@
                     </div>
                     <div class="catalog-results-item-image">
                       <a class="catalog-results-item-sedona" href="#">
-                        <img src="img/product-sedona.jpg" width="360" height="576">
+                        <img src="img/product-sedona.jpg" width="360" height="576" alt="catalog-sedona">
                       </a>
+                    </div>
                     <div class="catalog-results-item-price">
                       <h4><strong>SEDONA</strong></h4>
                       <span>Информационный сайт для туристов</span>
@@ -128,7 +129,7 @@
                       </div>
                       <div class="catalog-results-item-image">
                         <a class="catalog-results-item-pink" href="maketpink.html">
-                          <img src="img/product-pink.jpg" width="360" height="576">
+                          <img src="img/product-pink.jpg" width="360" height="576" alt="catalog-pink">
                         </a>
                       </div>
                       <div class="catalog-results-item-price">
@@ -147,9 +148,9 @@
                       </div>
                       <div class="catalog-results-item-image">
                         <a class="catalog-results-item-borodinsky" href="maketborodinsky.html">
-                          <img src="img/product-barbershop.jpg" width="360" height="576">
+                          <img src="img/product-barbershop.jpg" width="360" height="576" alt="catalog-barbershop">
                         </a>
-                    </div>
+                      </div>
                     <div class="catalog-results-item-price">
                       <h4><strong>BARBERSHOP</strong></h4>
                       <span>Сайт салона красоты. Для мужчин, да.</span>
@@ -166,14 +167,14 @@
                       </div>
                       <div class="catalog-results-item-image">
                         <a class="catalog-results-item-mishka" href="maketmishka.html">
-                          <img src="img/product-mishka.jpg" width="360" height="576">
+                          <img src="img/product-mishka.jpg" width="360" height="576" alt="catalog-mishka">
                         </a>
-                    </div>
-                    <div class="catalog-results-item-price">
-                      <h4><strong>MISHKA</strong></h4>
-                      <span>Интернет-магазин вязаных игрушек</span>
-                      <a class="button" href="#">9 900РУБ.</a>
-                    </div>
+                      </div>
+                      <div class="catalog-results-item-price">
+                        <h4><strong>MISHKA</strong></h4>
+                        <span>Интернет-магазин вязаных игрушек</span>
+                        <a class="button" href="#">9 900РУБ.</a>
+                      </div>
                   </li>
                   <li class="catalog-results-item">
                       <div class="browser">
@@ -185,14 +186,14 @@
                       </div>
                       <div class="catalog-results-item-image">
                         <a class="catalog-results-item-aplus" href="maketaplus.html">
-                          <img src="img/product-aplus.jpg" width="360" height="576">
+                          <img src="img/product-aplus.jpg" width="360" height="576" alt="catalog-aplus">
                         </a>
-                    </div>
-                    <div class="catalog-results-item-price">
-                      <h4><strong>A PLUS</strong></h4>
-                      <span>Лендинг курсов повышения квалификации</span>
-                      <a class="button" href="#">9 900РУБ.</a>
-                    </div>
+                      </div>
+                      <div class="catalog-results-item-price">
+                        <h4><strong>A PLUS</strong></h4>
+                        <span>Лендинг курсов повышения квалификации</span>
+                        <a class="button" href="#">9 900РУБ.</a>
+                      </div>
                   </li>
                   <li class="catalog-results-item">
                       <div class="browser">
@@ -204,7 +205,7 @@
                       </div>
                       <div class="catalog-results-item-image">
                         <a class="catalog-results-item-craft" href="maketcraft.html">
-                          <img src="img/product-kvast.jpg" width="360" height="576">
+                          <img src="img/product-kvast.jpg" width="360" height="576" alt="catalog-kvast">
                         </a>
                       </div>
                       <div class="catalog-results-item-price">
@@ -231,17 +232,10 @@
           </div>
         </main>
         <footer>
-          <!--<div class="container">-->
           <div class="location">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6222706575934!2d30.321626477551806!3d59.93840979863925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0LEuINC60L7QvdGO0YjQtdC90L3QsNGPIDE5Lzg!5e0!3m2!1sru!2sru!4v1504383217896" width=100% height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <!--        <p>
-              <img src="img/map.png" width="1440" height="416">
-              <img src="img/map-marker.png" width="231" height="190">
-            </p>-->
-
+            <div class="map" id="map">>
+<!--              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6222706575934!2d30.321626477551806!3d59.93840979863925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0LEuINC60L7QvdGO0YjQtdC90L3QsNGPIDE5Lzg!5e0!3m2!1sru!2sru!4v1504383217896" width=100% height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
             </div>
-          <!--</div>-->
             <div class="footer-contacts">
               <b>Nёrds Design Studio</b>
               <div class="address">
@@ -292,7 +286,8 @@
             })
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaCuSMvCxtRdhgjOnTSEvsl-eIAwwzmTc&callback=initMap"
-        async defer></script>   
+        async defer></script>
+
         <script>
           function initMap() {
             var uluru = {lat: 59.938792, lng: 30.323081};

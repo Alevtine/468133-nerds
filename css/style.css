@@ -791,7 +791,7 @@ header h1 {
     min-height: 616px;
     width: 360px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 30px;
 }
 
 .catalog-results {
@@ -910,6 +910,8 @@ header h1 {
     position: relative;
     z-index: 1;
     margin-top: 20px;
+    width: 100%;
+    height: 416px;
 }
 
 
@@ -1166,11 +1168,11 @@ header h1 {
 
 .catalog-results-item-price {
     display: none;
-    width: auto;
+    width: 270px;
     height: 100px;
     text-align: center;
     background-color: #eeeeee;
-    padding: 15px 45px 105px 45px;
+    padding: 15px 45px 110px 45px;
     position: absolute;
     z-index: 9;
     bottom: 0;
