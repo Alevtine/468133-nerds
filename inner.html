@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mini.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Магазин</title>
   </head>
@@ -11,13 +11,13 @@
         <header class="main-header">
           <div class="container">
             <nav class="main-navigation">
-              <a class="main-header-logo">
+              <a class="main-header-logo" href="index.html">
                 <img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
               </a>
               <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="inner.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
               </ul>
               <a class="basket" href="basket.html">Корзина</a>
@@ -31,7 +31,7 @@
               <div class="filter-block">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                  <fieldset><legend>Стоимость:</legend>
+                  <fieldset class="fieldset-price"><legend>Стоимость:</legend>
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale"><div style="width:70%" class="bar"></div></div>
@@ -43,7 +43,7 @@
                     </div>
                   </div>
                   </fieldset>
-                  <fieldset><legend>Сетка:</legend>
+                  <fieldset class="fieldset-setting"><legend>Сетка:</legend>
                     <ul class="filters-option">
                       <li class="filters-option-grid">
                         <input class="visually-hidden filter-input-radio" type="radio" name="grid-type" id="filters-adapt" checked>
@@ -59,7 +59,7 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <fieldset><legend>Особенности:</legend>
+                  <fieldset class="fieldset-features"><legend>Особенности:</legend>
                     <ul class="filters-option">
                       <li class="filters-option-spec">
                         <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec-type" id="filters-slider" checked><label for="filters-slider">Слайдер</label>
@@ -241,7 +241,7 @@
               <div class="address">
                 <br>191186, г. Санкт-Петербург,
                 <br>ул. Б. Конюшенная, д. 19/8
-                <br><p>Телефон: +7 (812) 275-75-75</p>
+                <br><p>тел. +7 (812) 275-75-75</p>
               </div>
               <br><a class="button mailus-link" href="mailus.html">Напишите нам</a>
             </div>
@@ -262,16 +262,16 @@
         </footer>
         <div class="write-us">
           <span>Напишите нам</span>
-          <div class="write-us-inputs">
-             <div class="Name"><p>Ваше имя:<br><input type="text" name="Name" value="  Представьтесь, пожалуйста"></p></div>
-             <div class="Email"><p>Ваш e-mail:<br><input type="email" name="Email" value="  Для отправки ответа"></p></div>
-             <div class="Text"><p>Текст письма:<br><input type="text" name="Text" value="  В свободной форме"></p></div>
-          </div>
+          <form class="write-us-inputs">
+             <div class="Name"><p>Ваше имя:<br><label><input type="text" name="Name" value="  Представьтесь, пожалуйста"></label></p></div>
+             <div class="Email"><p>Ваш e-mail:<br><label><input type="email" name="Email" value="  Для отправки ответа"></label></p></div>
+             <div class="Text"><p>Текст письма:<br><label><input type="text" name="Text" value="  В свободной форме"></label></p></div>
+         </form>
           <button type="submit">Отправить</button>
           <a class="close-cross" href="#"></a>
         </div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaCuSMvCxtRdhgjOnTSEvsl-eIAwwzmTc&callback=initMap"
         async defer></script>
-        <script src="js/scripts.js"></script>
+        <script src="js/mini-scripts.js"></script>
       </body>
     </html>
