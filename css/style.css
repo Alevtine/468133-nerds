@@ -635,8 +635,8 @@ input[type="radio"]:checked + label::before {
     background-image: url("../img/nerds-index-slide1.png");
     background-repeat: no-repeat;
     background-position: right;
-    margin-top: -70px;
-    margin-left: -4px;
+    margin-top: -71px;
+    margin-left: -3px;
 }
 
 .slide:nth-child(2) {
@@ -1260,6 +1260,7 @@ input[type="radio"]:checked + label::before {
 
 .catalog-results-item:hover .catalog-results-item-price {
     display: block;
+    cursor: pointer;
 }
 
 .catalog-results-item {
@@ -1283,11 +1284,18 @@ input[type="radio"]:checked + label::before {
     z-index: 9;
     bottom: 0;
     margin-bottom: 80px;
+    overflow: auto;
 }
+
 
 .filters-option-grid {
     padding-top: 10px;
 }
+
+li .filters-option-grid:focus {
+    border: 2px solid black;
+}
+
 
 .fieldset-features {
     margin-top: 34px;
