@@ -135,7 +135,7 @@ a.basket:active {
     background-color: #efc84a;
 }
 
-.sservices-list-item:first-child a.button:hover,
+.services-list-item:first-child a.button:hover,
 .slider a:hover,
 .footer-socialm a.button:hover {
     color: #ffffff;
@@ -157,16 +157,22 @@ a.basket:active {
 .footer-socialm a.button:active {
     color: #e26f72;
     background-color: #d7373b;
+    -webkit-box-shadow: inset 0 3px 0 0 #c13135;
+            box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .services-list-item:nth-child(2) a.button:active {
     color: #4dc491;
     background-color: #00aa62;
+    -webkit-box-shadow: inset 0 3px 0 0 #009958;
+            box-shadow: inset 0 3px 0 0 #009958;
 }
 
 .services-list-item:nth-child(3) a.button:active {
     color: #edc265;
     background-color: #e5a722;
+    -webkit-box-shadow: inset 0 3px 0 0 #ce961f;
+            box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
 a.main-header-logo:hover {
@@ -346,6 +352,8 @@ legend {
 
 .catalog-results-item a.button:active {
     background-color: #d7373b;
+    -webkit-box-shadow: inset 0 3px 0 0 #c13135;
+            box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .footer-contacts a.button {
@@ -360,6 +368,11 @@ legend {
     margin-top: 23px;
 }
 
+.footer-contacts a.button:active {
+    -webkit-box-shadow: inset 0 3px 0 0 #c13135;
+            box-shadow: inset 0 3px 0 0 #c13135;
+}
+
 .write-us button {
     display: block;
     width: 260px;
@@ -369,6 +382,12 @@ legend {
     padding-bottom: 20px;
     margin-top: 35px;
 }
+
+.write-us button:active {
+    -webkit-box-shadow: inset 0 3px 0 0 #c13135;
+            box-shadow: inset 0 3px 0 0 #c13135;
+}
+
 
 .filter-button {
     display:block;
@@ -392,6 +411,8 @@ legend {
 .pagination-next:active {
     background-color: #d5d5d5;
     color: #959595;
+    -webkit-box-shadow: inset 0 3px 0 0 #bfbfbf;
+            box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .pagination-item {
@@ -445,7 +466,8 @@ legend {
 
 .catalog-results-item-price .button {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: -100px;
 }
 
 input[type="checkbox"] {
@@ -1005,6 +1027,9 @@ input[type="radio"]:checked + label::before {
     width: 100%;
     height: 416px;
     background-color: #f1efe8;
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -1287,15 +1312,16 @@ input[type="radio"]:checked + label::before {
     overflow: auto;
 }
 
+li:active ~ .checkbox-focus {
+    outline: 0;
+}
 
 .filters-option-grid {
     padding-top: 10px;
 }
 
-li .filters-option-grid:focus {
     border: 2px solid black;
 }
-
 
 .fieldset-features {
     margin-top: 34px;
