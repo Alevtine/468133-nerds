@@ -23,7 +23,7 @@ submitButton.addEventListener("click", function(evt) {
 });
 
 var submitForm = document.querySelector('.write-us-inputs');
-submitForm.submit(function(event) {
+submitForm.addEventListener("submit", function(evt) {
     if (!input_name.val() || !input_email.val() || !input_message.val()) {
         event.preventDefault();
         popup.removeClass("effect");
