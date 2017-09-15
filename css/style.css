@@ -1046,7 +1046,7 @@ a.main-header-logo {
     height: 210px;
     z-index: 2;
     top: -360px;
-    left: 180px;
+    left: 0;
     padding: 30px 60px 65px 50px;
 }
 
@@ -1229,9 +1229,11 @@ a.main-header-logo {
 .show {
     display: block;
     position: fixed;
-    top: 30%;
-    left: 30%;
+    top: 10%;
+    left: 20%;
     z-index: 10;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.5),0 19px 60px rgba(0,0,0,.5);
+            box-shadow: 0 15px 20px rgba(0,0,0,.5),0 19px 60px rgba(0,0,0,.5);
 }
 
 .down path:hover,
@@ -1343,4 +1345,72 @@ a.main-header-logo {
 
 .sorting-option-item:nth-child(1) {
     margin-left: -45px;
+}
+
+/*
+.effect {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    transform: translateY(-10%);
+}*/
+
+.effect {
+    display: block;
+    -webkit-animation: bounce .6s;
+    animation: bounce .6s;
+}
+
+@-webkit-keyframes bounce {
+    0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+    }
+    70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    }
+    90%  {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+    }
+    70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    }
+    90%  {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.form-error {
+  -webkit-animation: login-error 0.8s;
+  animation: login-error 0.8s;
+}
+ @-webkit-keyframes login-error {
+    0%, 100%                { -webkit-transform: translateX(0); transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+ @keyframes login-error {
+    0%, 100%                { -webkit-transform: translateX(0); transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }

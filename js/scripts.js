@@ -3,16 +3,34 @@
             var popup = document.querySelector(".write-us")
             var close = document.querySelector(".close-cross")
 
+
             link.addEventListener("click", function (evt) {
                 evt.preventDefault();
-                popup.classList.add("show")
+                popup.classList.add("show");
+                popup.classList.add("effect");
             })
 
             close.addEventListener("click", function (evt) {
                 evt.preventDefault();
-                popup.classList.remove("show")
+                popup.classList.remove("show");
+                popup.classList.remove("effect");
             })
 
+            var submitButton = document.querySelector('.write-us button');
+             submitButton.addEventListener("click", function (evt) {
+                            evt.preventDefault();
+                            popup.classList.remove("effect");
+                            popup.classList.add("form-error");
+                        });
+
+            popup.submit(function(event) {
+              if (!input_name.val() || !input_email.val() || !input_message.val()) {
+                            event.preventDefault();
+                            popup.removeClass("effect");
+                            setTimeout(function() {
+                            popup.addClass("form-error") }, 50);
+              }
+            });
 
 
           function initMap() {
