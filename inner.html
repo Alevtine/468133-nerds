@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-mini.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Магазин</title>
   </head>
@@ -31,7 +31,7 @@
               <div class="filter-block">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                  <fieldset class="fieldset-price"><legend>Стоимость:</legend>
+                  <fieldset class="fieldset-price"><legend class="fieldset-name">Стоимость:</legend>
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale"><div style="width:70%" class="bar"></div></div>
@@ -43,7 +43,7 @@
                     </div>
                   </div>
                   </fieldset>
-                  <fieldset class="fieldset-setting"><legend>Сетка:</legend>
+                  <fieldset class="fieldset-setting"><legend class="fieldset-name">Сетка:</legend>
                     <ul class="filters-option">
                       <li class="filters-option-grid" tabindex="0"><span class="checkbox-focus">
                         <input class="visually-hidden filter-input-radio" type="radio" name="grid-type" id="filters-adapt" checked>
@@ -59,7 +59,7 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <fieldset class="fieldset-features"><legend>Особенности:</legend>
+                  <fieldset class="fieldset-features"><legend class="fieldset-name">Особенности:</legend>
                     <ul class="filters-option">
                       <li class="filters-option-spec" tabindex="0"><span class="checkbox-focus">
                         <input class="visually-hidden filter-input-checkbox" type="checkbox" name="spec-type" id="filters-slider" checked><label for="filters-slider">Слайдер</label></span>
@@ -85,18 +85,18 @@
             <div class="catalog-block">
               <section class="sorting"><strong>Сортировать:</strong>
                 <ul class="sorting-option">
-                  <li class="sorting-option-item">
+                  <li class="sorting-option-item" tabindex="0">
                     <input class="visually-hidden filter-input-radio" type="radio" name="by price" checked>По цене
                   </li>
-                  <li class="sorting-option-item">
+                  <li class="sorting-option-item" tabindex="0">
                     <input class="visually-hidden filter-input-radio" type="radio" name="by type">По типу
                   </li>
-                  <li class="sorting-option-item">
+                  <li class="sorting-option-item" tabindex="0">
                     <input class="visually-hidden filter-input-radio" type="radio" name="by name">По названию
                   </li>
                 </ul>
-                <a title="вниз" href="#"><svg class="down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 10L0 0h11"/></svg></a>
-                <a title="вверх" href="#"><svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 0L0 10h11z"/></svg></a>
+                <a title="вниз" href="#"><span class="visually-hidden">вниз</span><svg class="down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 10L0 0h11"/></svg></a>
+                <a title="вверх" href="#"><span class="visually-hidden">вверх</span><svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 0L0 10h11z"/></svg></a>
               </section>
               <section class="catalog">
                 <ul class="catalog-results">
@@ -236,22 +236,24 @@
             <div class="map" id="map">
 <!--              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6222706575934!2d30.321626477551806!3d59.93840979863925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0LEuINC60L7QvdGO0YjQtdC90L3QsNGPIDE5Lzg!5e0!3m2!1sru!2sru!4v1504383217896" width=100% height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
             </div>
-            <div class="footer-contacts">
-              <b>Nёrds Design Studio</b>
-              <div class="address">
-                <br>191186, г. Санкт-Петербург,
-                <br>ул. Б. Конюшенная, д. 19/8
-                <br><p>тел. +7 (812) 275-75-75</p>
+            <div class="conatiner">
+              <div class="footer-contacts">
+                <b>Nёrds Design Studio</b>
+                <div class="address">
+                  <br>191186, г. Санкт-Петербург,
+                  <br>ул. Б. Конюшенная, д. 19/8
+                  <br><p>тел. +7 (812) 275-75-75</p>
+                </div>
+                <br><a class="button mailus-link" href="mailus.html">Напишите нам</a>
               </div>
-              <br><a class="button mailus-link" href="mailus.html">Напишите нам</a>
             </div>
           </div>
           <div class="container">
             <div class="footer-socialm">
               <ul>
-                <li><a title="ВКонтакте" class="button" href="#">ВКонтакте</a></li>
-                <li><a title="Фейсбук" class="button" href="#">Фейсбук</a></li>
-                <li><a title="Инстаграм" class="button" href="#">Инстаграм</a></li>
+                <li><a title="ВКонтакте" class="button vkontakte" href="#">ВКонтакте</a></li>
+                <li><a title="Фейсбук" class="button facebook" href="#">Фейсбук</a></li>
+                <li><a title="Инстаграм" class="button instagram" href="#">Инстаграм</a></li>
               </ul>
                 <div>
                   <b>Давайте дружить, это выгодно!</b>
@@ -263,9 +265,9 @@
         <div class="write-us">
           <span>Напишите нам</span>
           <form class="write-us-inputs">
-             <div class="Name"><p>Ваше имя:<br><label><input type="text" name="Name" value="  Представьтесь, пожалуйста"></label></p></div>
-             <div class="Email"><p>Ваш e-mail:<br><label><input type="email" name="Email" value="  Для отправки ответа"></label></p></div>
-             <div class="Text"><p>Текст письма:<br><label><input type="text" name="Text" value="  В свободной форме"></label></p></div>
+             <div class="name"><p>Ваше имя:<br><label><input type="text" name="Name" value="  Представьтесь, пожалуйста"></label></p></div>
+             <div class="email"><p>Ваш e-mail:<br><label><input type="email" name="Email" value="  Для отправки ответа"></label></p></div>
+             <div class="text"><p>Текст письма:<br><label><input type="text" name="Text" value="  В свободной форме"></label></p></div>
          </form>
           <button type="submit">Отправить</button>
           <a class="close-cross" href="#"></a>
